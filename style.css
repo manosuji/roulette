@@ -1,4 +1,16 @@
-.changer {
-    color: brown;
+body {
+    font-family: monospace;
     cursor: default;
+    font-size: large;
+    text-align: center;
+}
+
+.changer {
+    color: blanchedalmond;
+    background-color: brown;
+}
+
+.changer:hover {
+    color: brown;
+    background-color: blanchedalmond;
 }
