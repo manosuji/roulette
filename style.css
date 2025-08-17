@@ -6,13 +6,13 @@ body {
     user-select: none;
 }
 
-.changer {
+.c {
     color: blanchedalmond;
     background-color: brown;
     cursor: pointer;
 }
 
-.changer:hover {
+.c:hover {
     color: brown;
     background-color: blanchedalmond;
 }
