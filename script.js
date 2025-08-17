@@ -9,28 +9,18 @@ function nextItem(list) {
     return item;
 }
 
-let line1 = ["sky", "hands", "mouth"]
-
-var changers = document.querySelectorAll(".changer");
+var changers = document.querySelectorAll(".c");
 
 changers.forEach(item => {
     item.addEventListener('mouseover', function () {
-        item.textContent=nextItem(item.dataset.alts.split('/'));
+        item.textContent=nextItem(item.dataset.alt.split('/'));
     });
     item.addEventListener('click', function () {
-        item.textContent=nextItem(item.dataset.alts.split('/'));
+        item.textContent=nextItem(item.dataset.alt.split('/'));
     });  
 })
 
 
-// for (var i=0;i<changers.length;i++) {
-//     changers[i].addEventListener('mouseover', function () {
-//         changers[i].textContent=nextItem(line1);
-//     });
-//     changers[i].addEventListener('click', function () {
-//         changers[i].textContent=nextItem(line1);
-//     });
-// }
 
 //WORKING BELOW
 
