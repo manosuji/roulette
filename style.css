@@ -3,11 +3,13 @@ body {
     cursor: default;
     font-size: large;
     text-align: center;
+    user-select: none;
 }
 
 .changer {
     color: blanchedalmond;
     background-color: brown;
+    cursor: pointer;
 }
 
 .changer:hover {
