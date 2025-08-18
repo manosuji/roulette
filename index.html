@@ -3,14 +3,23 @@
     <head>
         <link rel="stylesheet" type="text/css" href="./style.css">
         <script src="script.js" defer></script>
-        <script src="https://cdn.rawgit.com/alexgibson/shake.js/master/shake.js"></script>
+        <script src="shake.js"></script>
         <script>
-            var findShake = new Shake({threshold:15});
-            findShake.start();
-            window.addEventListener('shake',function(){
-              alert("Shaked");
-            },false);
-          </script>
+            var myShakeEvent = new Shake({
+            threshold: 15, // Optional: adjust for sensitivity
+            timeout: 1000  // Optional: adjust for event frequency
+            });
+
+        myShakeEvent.start();
+        window.addEventListener('shake', shakeEventDidOccur, false);
+
+        function shakeEventDidOccur() {
+            // Your code to execute when a shake is detected
+            console.log('Shake detected!');
+            alert('Shake!');
+        }
+
+        </script>
     </head>
 <body>
     <br><br>
@@ -28,7 +37,7 @@
     <p>the <span class="c" data-alt="crush/swarm/current/flush">flush</span> of breath you know will come back to you</p>
     <br>
     <br>
-    <p>call me starling/love/from your car/weightless</p>
+    <p>call me <span class="c" data-alt="love/from your car/weightless/starling">starling</span></p>
     <p>blood thrumming wingbeat pulse all aflutter</p>
 </body>
 </html>
