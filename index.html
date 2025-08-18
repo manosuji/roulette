@@ -3,6 +3,14 @@
     <head>
         <link rel="stylesheet" type="text/css" href="./style.css">
         <script src="script.js" defer></script>
+        <script src="https://cdn.rawgit.com/alexgibson/shake.js/master/shake.js"></script>
+        <script>
+            var findShake = new Shake({threshold:15});
+            findShake.start();
+            window.addEventListener('shake',function(){
+              alert("Shaked");
+            },false);
+          </script>
     </head>
 <body>
     <br><br>
@@ -19,8 +27,8 @@
     <p>remember the motionless [wet/] of rooms so sweet and still</p>
     <p>the <span class="c" data-alt="crush/swarm/current/flush">flush</span> of breath you know will come back to you</p>
     <br>
-
-    
-
+    <br>
+    <p>call me starling/love/from your car/weightless</p>
+    <p>blood thrumming wingbeat pulse all aflutter</p>
 </body>
 </html>
