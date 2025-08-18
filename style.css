@@ -1,19 +1,22 @@
 body {
     font-family: monospace;
-    cursor: default;
+    cursor: pointer;
     font-size: large;
-    text-align: justify;
     user-select: none;
     margin-left: 30%;
 }
 
-.c {
-    color: blanchedalmond;
-    background-color: darkred;
-    cursor: pointer;
+.justify{
+    text-align: justify;
 }
 
 .c:hover {
-    color: darkred;
-    background-color: blanchedalmond;
+    color: white;
+    background-color: tomato;
+    cursor: none;
+}
+
+.c {
+    color: tomato;
+    background-color: white;
 }
