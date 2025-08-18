@@ -2,17 +2,18 @@ body {
     font-family: monospace;
     cursor: default;
     font-size: large;
-    text-align: center;
+    text-align: justify;
     user-select: none;
+    margin-left: 30%;
 }
 
 .c {
     color: blanchedalmond;
-    background-color: brown;
+    background-color: darkred;
     cursor: pointer;
 }
 
 .c:hover {
-    color: brown;
+    color: darkred;
     background-color: blanchedalmond;
 }
