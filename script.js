@@ -9,31 +9,14 @@ function nextItem(list) {
     return item;
 }
 
+// gathers all changeable elements
 var changers = document.querySelectorAll(".c");
-
+// adds event listeners to each changeable element
 changers.forEach(item => {
     item.addEventListener('mouseover', function () {
         item.textContent=nextItem(item.dataset.alt.split('/'));
-    });
+    });  
     item.addEventListener('click', function () {
         item.textContent=nextItem(item.dataset.alt.split('/'));
-    });  
+    });
 })
-
-
-
-//WORKING BELOW
-
-// let x = document.getElementById('eyes'); // initial text
-
-// let line1 = ["sky", "hands", "mouth"] // list of words to display
-
-// // when mouse over word, go to next word in list
-// x.addEventListener('mouseover', function () {
-//         x.textContent=nextItem(line1);
-// });
-
-// x.addEventListener('click', function () {
-//     x.textContent=nextItem(line1);
-// });
-
