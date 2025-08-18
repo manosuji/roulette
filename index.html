@@ -3,23 +3,6 @@
     <head>
         <link rel="stylesheet" type="text/css" href="./style.css">
         <script src="script.js" defer></script>
-        <script src="shake.js"></script>
-        <script>
-            var myShakeEvent = new Shake({
-            threshold: 15, // Optional: adjust for sensitivity
-            timeout: 1000  // Optional: adjust for event frequency
-            });
-
-        myShakeEvent.start();
-        window.addEventListener('shake', shakeEventDidOccur, false);
-
-        function shakeEventDidOccur() {
-            // Your code to execute when a shake is detected
-            console.log('Shake detected!');
-            alert('Shake!');
-        }
-
-        </script>
     </head>
 <body>
     <br><br>
