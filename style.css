@@ -3,11 +3,25 @@ body {
     cursor: pointer;
     font-size: large;
     user-select: none;
-    margin-left: 30%;
 }
 
-.justify{
-    text-align: justify;
+.disclaimer{
+    font-size: small;
+    text-align: center;
+    margin: auto;
+    padding: 15px;
+    line-height: 1.25;
+}
+
+.divider {
+    border-bottom: 1px solid black ;
+    max-width: 650px;
+    margin: auto;
+}
+
+#poem {
+    margin-left: 30%;
+    padding-top: 15px;
 }
 
 .c:hover {
