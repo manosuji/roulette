@@ -19,4 +19,7 @@ changers.forEach(item => {
     item.addEventListener('click', function () {
         item.textContent=nextItem(item.dataset.alt.split('/'));
     });
+    item.addEventListener('touchstart', function () {
+        item.textContent=nextItem(item.dataset.alt.split('/'));
+    });
 })
