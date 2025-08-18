@@ -20,7 +20,7 @@ body {
 }
 
 #poem {
-    margin-left: 30%;
+    margin-left: 20vw;
     padding-top: 15px;
 }
 
@@ -34,3 +34,16 @@ body {
     color: tomato;
     background-color: white;
 }
+
+@media only screen and (max-width: 600px) {
+    body {
+      font-size: 20px;
+    }
+    .disclaimer {
+        font-size: 16px;
+    }
+    #poem {
+        margin-left: 0;
+        margin: 10px;
+    }
+  }
