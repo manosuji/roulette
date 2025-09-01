@@ -1,6 +1,5 @@
 body {
     font-family: monospace;
-    cursor: pointer;
     font-size: large;
     user-select: none;
 }
@@ -27,7 +26,6 @@ body {
 .c:hover {
     color: white;
     background-color: tomato;
-    cursor: none;
 }
 
 .c {
